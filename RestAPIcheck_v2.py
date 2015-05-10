@@ -3,18 +3,7 @@ from lxml import etree
 from variables import market_list as market_list,lod_base_url as lod_base_url,shoplocal_base_url as shoplocal_base_url,lod_list1 as lod_list1,shoplocal_list1 as shoplocal_list1
 
 
-#market_list = ["Boston"]
 
-'''
-# function may not be needed
-def None_update(content):
-    if content == None:
-        return ''
-    else:
-        return content
-        '''
-     
-     
 def cleanup(content):
     if content.endswith("\n"):
         return content[:-1]
@@ -107,9 +96,9 @@ def compare_lists(feed1,feed2):
 
 for market in market_list:
     print "Market under test: " + str(market)
-    parse_api_in_xml(lod_list1, lod_base_url, market)
-    parse_api_in_xml(shoplocal_list1, shoplocal_base_url, market)
-    compare_lists(lod_list1,shoplocal_list1)
-    #print lod_list1
-    #print shoplocal_list1
+    parse_api_in_xml(list1, list1_base_url, market)
+    parse_api_in_xml(list2, list2_base_url, market)
+    compare_lists(list1,list2)
+    #print list1
+    #print list2
 
