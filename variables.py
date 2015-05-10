@@ -1,9 +1,9 @@
 
-lod_base_url = "insert base url to test here"
+list1_base_url = "insert base url to test here"
 product_key_url = "&productkeys="
-shoplocal_base_url = "insert 2nd base url to test here"
-lod_list1 = []
-shoplocal_list1 = []
+list2_base_url = "insert 2nd base url to test here"
+list1 = []
+list2 = []
 
 market_list = [
 "Albany",
